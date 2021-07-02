@@ -1,0 +1,120 @@
+:root {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0;
+	block-size: 100vh;
+	inline-size: 100%;
+	font-size: 1.6rem;
+}
+
+.wrapper {
+	block-size: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.phone {
+	position: relative;
+	border: 8px solid #000;
+	border-radius: 4rem;
+	inline-size: 320px;
+	block-size: 620px;
+	background-color: #ccefff;
+	-webkit-box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3),
+		0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+	box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3),
+		0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+	overflow: hidden;
+}
+
+.layer {
+	position: absolute;
+	border-radius: 12px;
+}
+
+.layer-1 {
+	z-index: 1;
+	block-size: 450px;
+	inline-size: 8rem;
+	background-color: white;
+	bottom: 0;
+	right: 70px;
+}
+.layer-2 {
+	z-index: 2;
+	block-size: 450px;
+	inline-size: 8rem;
+	background-color: white;
+	bottom: 0;
+	left: 70px;
+}
+.layer-3 {
+	z-index: 3;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	inline-size: 70%;
+	block-size: 400px;
+	background-color: bisque;
+	bottom: 0;
+}
+.layer-4 {
+	z-index: 4;
+	block-size: 330px;
+	inline-size: 8rem;
+	background-color: white;
+	bottom: 0;
+	left: 30px;
+}
+.layer-5 {
+	z-index: 5;
+	left: 0;
+	inline-size: 60%;
+	block-size: 280px;
+	background-color: lightgreen;
+	bottom: 0;
+}
+.layer-6 {
+	z-index: 6;
+	block-size: 230px;
+	inline-size: 8rem;
+	background-color: white;
+	bottom: 0;
+	right: 60px;
+}
+.layer-7 {
+	z-index: 7;
+	right: 0;
+	bottom: 0;
+	inline-size: 54%;
+	block-size: 180px;
+	background-color: lightsalmon;
+}
+.layer-8 {
+	z-index: 8;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	block-size: 90px;
+	inline-size: 70%;
+	bottom: 0;
+	background-color: lightblue;
+}
+.layer-9 {
+	z-index: 9;
+	background-color: whitesmoke;
+	left: 0;
+	bottom: 0;
+	block-size: 80px;
+	inline-size: 35%;
+}
+.layer-10 {
+	z-index: 10;
+	background-color: whitesmoke;
+	right: 0;
+	bottom: 0;
+	block-size: 80px;
+	inline-size: 35%;
+}
