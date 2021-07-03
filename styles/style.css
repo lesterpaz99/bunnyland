@@ -1,5 +1,13 @@
 :root {
 	font-size: 62.5%;
+
+	/* COLORS */
+	--sky-color: #ccefff;
+	--grass-color: #138a36;
+	--bush-color: #285238;
+	--earth-color: #7f5539;
+	--dark-earth-color: #653a2a;
+	--bunny-color: #f4acb7;
 }
 
 body {
@@ -19,9 +27,9 @@ body {
 	position: relative;
 	border: 8px solid #000;
 	border-radius: 4rem;
-	inline-size: 320px;
-	block-size: 620px;
-	background-color: #ccefff;
+	inline-size: 32rem;
+	block-size: 62rem;
+	background-color: var(--sky-color);
 	-webkit-box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3),
 		0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
 	box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3),
@@ -31,90 +39,346 @@ body {
 
 .layer {
 	position: absolute;
-	border-radius: 12px;
+	border-radius: 1.2rem;
+	overflow: hidden;
+}
+
+.grass {
+	block-size: 1.5rem;
+	inline-size: 100%;
+	background-color: var(--grass-color);
+	position: absolute;
+}
+
+.grass-layer {
+	background-color: var(--dark-earth-color);
+	opacity: 1;
+	background-image: -o-linear-gradient(
+			315deg,
+			var(--grass-color) 25%,
+			transparent 25%
+		),
+		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
+		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
+		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
+					25%);
+	background-image: -o-linear-gradient(
+			315deg,
+			var(--grass-color) 25%,
+			transparent 25%
+		),
+		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
+		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
+		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
+					25%);
+	background-image: -o-linear-gradient(
+			315deg,
+			var(--grass-color) 25%,
+			transparent 25%
+		),
+		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
+		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
+		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
+					25%);
+	background-image: -o-linear-gradient(
+			315deg,
+			var(--grass-color) 25%,
+			transparent 25%
+		),
+		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
+		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
+		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color) 25%);
+	background-image: linear-gradient(
+			135deg,
+			var(--grass-color) 25%,
+			transparent 25%
+		),
+		linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
+		linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
+		linear-gradient(315deg, var(--grass-color) 25%, var(--dark-earth-color) 25%);
+	background-position: 18px 0, 18px 0, 0 0, 0 0;
+	background-size: 36px 36px;
+	background-repeat: repeat;
+	position: absolute;
+	block-size: 2rem;
+	inline-size: 100%;
+	inset-block: 1.4rem;
+}
+
+.inner-layer {
+	block-size: 1.8rem;
+	inline-size: 100%;
+	inset-block: 3.3rem;
+	position: absolute;
+	background-color: var(--earth-color);
+	opacity: 1;
+	background-image: -o-linear-gradient(
+			315deg,
+			var(--dark-earth-color) 25%,
+			transparent 25%
+		),
+		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
+		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
+		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
+					25%);
+	background-image: -o-linear-gradient(
+			315deg,
+			var(--dark-earth-color) 25%,
+			transparent 25%
+		),
+		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
+		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
+		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
+					25%);
+	background-image: -o-linear-gradient(
+			315deg,
+			var(--dark-earth-color) 25%,
+			transparent 25%
+		),
+		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
+		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
+		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color) 25%);
+	background-image: linear-gradient(
+			135deg,
+			var(--dark-earth-color) 25%,
+			transparent 25%
+		),
+		linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
+		linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
+		linear-gradient(315deg, var(--dark-earth-color) 25%, var(--earth-color) 25%);
+	background-position: 18px 0, 18px 0, 0 0, 0 0;
+	background-size: 36px 36px;
+	background-repeat: repeat;
 }
 
 .layer-1 {
 	z-index: 1;
-	block-size: 450px;
+	block-size: 45rem;
 	inline-size: 8rem;
-	background-color: white;
-	bottom: 0;
-	right: 70px;
+	inset-block-end: 0;
+	inset-inline-end: 70px;
 }
 .layer-2 {
 	z-index: 2;
-	block-size: 450px;
+	block-size: 45rem;
 	inline-size: 8rem;
-	background-color: white;
-	bottom: 0;
-	left: 70px;
+	inset-block-end: 0;
+	inset-inline-start: 70px;
 }
 .layer-3 {
 	z-index: 3;
-	left: 0;
-	right: 0;
+	inset-inline-start: 0;
+	inset-inline-end: 0;
+	inset-block-end: 0;
 	margin: 0 auto;
 	inline-size: 70%;
-	block-size: 400px;
-	background-color: bisque;
-	bottom: 0;
+	block-size: 40rem;
+	background-color: var(--earth-color);
+	-webkit-box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3),
+		0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+	box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3),
+		0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
 }
 .layer-4 {
 	z-index: 4;
-	block-size: 330px;
+	block-size: 33rem;
 	inline-size: 8rem;
-	background-color: white;
-	bottom: 0;
-	left: 30px;
+	inset-block-end: 0;
+	inset-inline-start: 30px;
 }
 .layer-5 {
 	z-index: 5;
-	left: 0;
+	inset-inline-start: 0;
+	inset-block-end: 0;
 	inline-size: 60%;
-	block-size: 280px;
-	background-color: lightgreen;
-	bottom: 0;
+	block-size: 28rem;
+	background-color: var(--earth-color);
+	-webkit-box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3),
+		0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+	box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3),
+		0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
 }
 .layer-6 {
 	z-index: 6;
-	block-size: 230px;
+	block-size: 23rem;
 	inline-size: 8rem;
-	background-color: white;
-	bottom: 0;
-	right: 60px;
+	inset-block-end: 0;
+	inset-inline-end: 60px;
 }
 .layer-7 {
 	z-index: 7;
-	right: 0;
-	bottom: 0;
+	inset-inline-end: 0;
+	inset-block-end: 0;
 	inline-size: 54%;
-	block-size: 180px;
-	background-color: lightsalmon;
+	block-size: 18rem;
+	background-color: var(--earth-color);
+	-webkit-box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3),
+		0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+	box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3),
+		0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
 }
 .layer-8 {
 	z-index: 8;
-	left: 0;
-	right: 0;
+	inset-inline-start: 0;
+	inset-inline-end: 0;
+	inset-block-end: 0;
 	margin: 0 auto;
-	block-size: 90px;
+	block-size: 6rem;
 	inline-size: 70%;
-	bottom: 0;
-	background-color: lightblue;
+	background-color: var(--bush-color);
+	overflow: visible;
 }
 .layer-9 {
 	z-index: 9;
 	background-color: whitesmoke;
-	left: 0;
-	bottom: 0;
-	block-size: 80px;
-	inline-size: 35%;
+	inset-inline-start: 0;
+	inset-block-end: 0;
+	block-size: 6rem;
+	inline-size: 6rem;
+	overflow: visible;
 }
 .layer-10 {
 	z-index: 10;
 	background-color: whitesmoke;
-	right: 0;
-	bottom: 0;
-	block-size: 80px;
-	inline-size: 35%;
+	inset-inline-end: 0;
+	inset-block-end: 0;
+	block-size: 6rem;
+	inline-size: 6rem;
+	overflow: visible;
+}
+
+/* EARS */
+
+.left-ear--outer {
+	background-color: white;
+	border-radius: 90%;
+	inline-size: 2rem;
+	block-size: 5rem;
+	position: absolute;
+	inset-inline-start: 1rem;
+}
+
+.left-ear--inner {
+	background-color: var(--bunny-color);
+	border-radius: 90%;
+	inline-size: 1rem;
+	block-size: 5rem;
+	position: absolute;
+	inset-inline-start: 2rem;
+	-webkit-transform: translatex(-50%);
+	-ms-transform: translatex(-50%);
+	transform: translate(-50%, 10%);
+}
+
+.right-ear--outer {
+	background-color: white;
+	border-radius: 90%;
+	inline-size: 2rem;
+	block-size: 5rem;
+	position: absolute;
+	inset-inline-end: 1rem;
+}
+
+.right-ear--inner {
+	background-color: var(--bunny-color);
+	border-radius: 90%;
+	inline-size: 1rem;
+	block-size: 5rem;
+	position: absolute;
+	inset-inline-end: 2rem;
+	-webkit-transform: translatex(50%);
+	-ms-transform: translatex(50%);
+	transform: translate(50%, 10%);
+}
+
+/* HEAD */
+
+.head {
+	background-color: white;
+	inline-size: 100%;
+	block-size: 6rem;
+	border-radius: 50%;
+	-webkit-transform: translateY(50%);
+	-ms-transform: translateY(50%);
+	transform: translateY(50%);
+	position: relative;
+}
+
+.head__eye {
+	inline-size: 4px;
+	block-size: 4px;
+	border-radius: 50%;
+	background-color: #000;
+	position: absolute;
+	inset-block-start: 1.5rem;
+}
+
+.head__eye--left {
+	inset-inline-start: 32px;
+}
+
+.head__eye--right {
+	inset-inline-end: 32px;
+}
+
+.bush {
+	background-color: var(--bush-color);
+	position: absolute;
+	border-radius: 50%;
+	block-size: 9rem;
+	inline-size: 9rem;
+}
+
+.bush-1 {
+	inset-inline-start: 50%;
+	-webkit-transform: translate(-50%, -60%);
+	-ms-transform: translate(-50%, -60%);
+	transform: translate(-50%, -60%);
+}
+
+.bush-2 {
+	inset-inline-start: 0;
+	-webkit-transform: translate(0%, -30%);
+	-ms-transform: translate(0%, -30%);
+	transform: translate(0%, -30%);
+}
+
+.bush-3 {
+	inset-inline-end: 0;
+	-webkit-transform: translate(0%, -30%);
+	-ms-transform: translate(0%, -30%);
+	transform: translate(0%, -30%);
+}
+
+.cloud {
+	background-color: whitesmoke;
+	position: absolute;
+	border-radius: 50%;
+	block-size: 6rem;
+	inline-size: 6rem;
+}
+
+.cloud--left-1 {
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.cloud--left-2 {
+	inset-block-start: 1rem;
+	-webkit-transform: translateX(50%);
+	-ms-transform: translateX(50%);
+	transform: translateX(50%);
+}
+
+.cloud--right-1 {
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.cloud--right-2 {
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
