@@ -466,3 +466,11 @@ body {
 		transform: translateY(50px);
 	}
 }
+
+@media screen and (max-width: 320px) {
+	.phone {
+		border: none;
+		border-radius: 0;
+		inline-size: 100%;
+	}
+}
