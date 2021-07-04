@@ -37,6 +37,51 @@ body {
 	overflow: hidden;
 }
 
+.title-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+.title {
+	color: var(--dark-earth-color);
+	font-family: 'Dancing Script', cursive;
+	font-size: 3.2rem;
+	margin: 2rem;
+}
+
+.total-count,
+.game-description {
+	color: var(--bush-color);
+	font-family: 'Fira Sans', sans-serif;
+	margin: 0;
+	text-align: center;
+}
+
+.start-btn {
+	-webkit-margin-start: 50%;
+	margin: 0.5rem;
+	background-color: var(--grass-color);
+	padding: 0.8rem 2rem;
+	border: none;
+	border-radius: 5px;
+	-webkit-border-after: 4px solid var(--bush-color);
+	border-block-end: 4px solid var(--bush-color);
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.start-btn:hover {
+	cursor: pointer;
+}
+
+.start-btn:active {
+	-webkit-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
 .layer {
 	position: absolute;
 	border-radius: 1.2rem;
@@ -62,176 +107,6 @@ body {
 		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
 		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
 					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--grass-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--grass-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--grass-color) 25%, var(--dark-earth-color) 25%);
 	background-image: linear-gradient(
 			135deg,
 			var(--grass-color) 25%,
@@ -265,167 +140,6 @@ body {
 		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
 		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
 					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color)
-					25%);
-	background-image: -o-linear-gradient(
-			315deg,
-			var(--dark-earth-color) 25%,
-			transparent 25%
-		),
-		-o-linear-gradient(225deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(45deg, var(--dark-earth-color) 25%, transparent 25%),
-		-o-linear-gradient(135deg, var(--dark-earth-color) 25%, var(--earth-color) 25%);
 	background-image: linear-gradient(
 			135deg,
 			var(--dark-earth-color) 25%,
@@ -445,14 +159,24 @@ body {
 	inline-size: 8rem;
 	inset-block-end: 0;
 	inset-inline-end: 70px;
+
+	-webkit-animation: layer 3s ease-in-out infinite;
+
+	animation: layer 3s ease-in-out infinite;
 }
+
 .layer-2 {
 	z-index: 2;
 	block-size: 45rem;
 	inline-size: 8rem;
 	inset-block-end: 0;
 	inset-inline-start: 70px;
+
+	-webkit-animation: layer 1s ease infinite;
+
+	animation: layer 1s ease infinite;
 }
+
 .layer-3 {
 	z-index: 3;
 	inset-inline-start: 0;
@@ -473,6 +197,10 @@ body {
 	inline-size: 8rem;
 	inset-block-end: 0;
 	inset-inline-start: 30px;
+
+	-webkit-animation: layer 2s ease-in infinite;
+
+	animation: layer 2s ease-in infinite;
 }
 .layer-5 {
 	z-index: 5;
@@ -492,6 +220,10 @@ body {
 	inline-size: 8rem;
 	inset-block-end: 0;
 	inset-inline-end: 60px;
+
+	-webkit-animation: layer 1.2s ease-out infinite;
+
+	animation: layer 1.2s ease-out infinite;
 }
 .layer-7 {
 	z-index: 7;
@@ -611,15 +343,15 @@ body {
 @-webkit-keyframes blink {
 	0% {
 		-webkit-transform: scaleY(1);
-		        transform: scaleY(1);
+		transform: scaleY(1);
 	}
 	5% {
 		-webkit-transform: scaleY(0.2);
-		        transform: scaleY(0.2);
+		transform: scaleY(0.2);
 	}
 	15% {
 		-webkit-transform: scaleY(1);
-		        transform: scaleY(1);
+		transform: scaleY(1);
 	}
 }
 
@@ -706,4 +438,31 @@ body {
 	-webkit-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
+}
+
+.animation-off {
+	animation: none;
+}
+
+/* ANIMATIONS */
+@-webkit-keyframes layer {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	25% {
+		-webkit-transform: translateY(50px);
+		transform: translateY(50px);
+	}
+}
+
+@keyframes layer {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	25% {
+		-webkit-transform: translateY(50px);
+		transform: translateY(50px);
+	}
 }
